@@ -27,7 +27,7 @@
 
 <body ng-controller="appController">
 
-    <div id="wrap">
+    <div id="wrap" style="background: url({{backgroundImg}}); background-size: cover">
         @@include('../modules/header/header.html')
 
         <ng-view autoscroll="true"></ng-view>

@@ -5,9 +5,9 @@
         .module('rovniy')
         .controller('appController', appController);
 
-    appController.$inject = [];
+    appController.$inject = ['$rootScope'];
 
-    function appController() {
+    function appController($rootScope) {
         var vm = this;
 
         activate();
@@ -15,6 +15,7 @@
         ////////////////
 
         function activate() {
+            $rootScope.backgroundImg = '/src/img/bg/1.jpg';
         }
 
     }

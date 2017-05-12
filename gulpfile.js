@@ -197,8 +197,7 @@ var options = {
 var proxy = proxyMiddleware(['/api','/rovniy'], options);
 
 var serverGen = function(proxy1, cb){
-    var rovniyApp = expressFunc('rovniy')
-
+    var rovniyApp = expressFunc('rovniy');
 
     return function() {
         express()

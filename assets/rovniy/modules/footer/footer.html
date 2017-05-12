@@ -1,4 +1,17 @@
-<div ng-controller="footerController as vm">
-
+<div ng-controller="footerController as vm" id="footer">
+    <div class="controls-bar bar">
+        <a class="icon" ng-href="{{item.link}}"
+           ng-repeat="item in vm.icons track by $index"
+           ng-class="{'active': vm.active == item.name}"
+           ng-click="vm.active === item.name ? vm.active = undefined : vm.active = item.name">
+            <i class="fa {{item.icon}} {{item.size}} {{item.color}}"></i>
+        </a>
+    </div>
+    <div class="status-bar bar">
+        <div class="icon collapse-all"></div>
+        <div class="icon clock-icon">
+            <p>{{currentTime}}<br/><small>{{currentDate}}</small></p>
+        </div>
+    </div>
 </div>
 
