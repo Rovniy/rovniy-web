@@ -9,6 +9,12 @@
            ng-click="vm.active === item.name ? vm.active = undefined : vm.active = item.name">
             <i class="fa {{item.icon}} {{item.size}} {{item.color}}"></i>
         </a>
+        <a class="icon" ng-href="{{item.link}}"
+           ng-repeat="item in modules track by $index">
+            {{item.name}}
+        </a>
+
+
     </div>
     <div class="status-bar bar">
         <div class="icon collapse-all"></div>

@@ -8,7 +8,8 @@
     appController.$inject = ['$rootScope'];
 
     function appController($rootScope) {
-        var vm = this;
+        var app = this;
+        
 
         activate();
 
@@ -16,6 +17,7 @@
 
         function activate() {
             $rootScope.backgroundImg = '/src/img/bg/1.jpg';
+            
         }
 
     }
