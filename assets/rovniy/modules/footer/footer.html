@@ -1,5 +1,8 @@
 <div ng-controller="footerController as vm" id="footer">
     <div class="controls-bar bar">
+        <a class="icon" href ng-class="{'active': vm.active == item.name}" ng-click="vm.active === item.name ? vm.active = undefined : vm.active = item.name">
+            <img src="/src/img/icons/start.png"/>
+        </a>
         <a class="icon" ng-href="{{item.link}}"
            ng-repeat="item in vm.icons track by $index"
            ng-class="{'active': vm.active == item.name}"
