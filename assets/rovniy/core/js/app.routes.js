@@ -14,6 +14,11 @@
                 controller: 'indexController',
                 controllerAs: 'vm'
             })
+            .when ('/login', {
+                templateUrl: '/login/login.html',
+                controller: 'loginController',
+                controllerAs: 'vm'
+            })
             .otherwise({
                 redirectTo: '/'
             });

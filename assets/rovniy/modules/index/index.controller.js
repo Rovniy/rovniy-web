@@ -5,15 +5,19 @@
         .module('rovniy')
         .controller('indexController', indexController);
 
-    indexController.$inject = [];
+    indexController.$inject = ['$location'];
 
-    function indexController() {
+    function indexController($location) {
         var vm = this;
         
         activate();
         ///////////////////
         function activate() {
-            
+            var vl = localStorage.getItem('logx');
+            if (!vl) {
+                $location.path('/login')
+            }
+            $http.post('url')
         }
     }
 })();
