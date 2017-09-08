@@ -26,10 +26,10 @@
             vm.login = '';
             vm.password = '';
             vm.error = false;
-            localStorage.removeItem('logx   ')
+            localStorage.removeItem('logx   ');
             if (login !== '' && pass !== '') {
                 if (login == '1' && pass == '1'){
-                    localStorage.setItem('logx', 'gj')
+                    localStorage.setItem('logx', 'gj');
                     $location.path('/')
                 } else {
                     vm.error = true;

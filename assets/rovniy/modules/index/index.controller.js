@@ -17,7 +17,6 @@
             if (!vl) {
                 $location.path('/login')
             }
-            $http.post('url')
         }
     }
 })();
